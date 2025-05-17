@@ -1,7 +1,10 @@
+# fly.toml app configuration file generated for supabase-grafana-metrics-lively-snow-7162 on 2024-11-02T11:18:01+01:00
+#
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'supabase-grafana-metrics'
+app = 'supabase-grafana-metrics-lively-snow-7162'
+primary_region = 'ams'
 
 [build]
 
@@ -17,7 +20,7 @@ app = 'supabase-grafana-metrics'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = false
+  auto_stop_machines = 'off'
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
